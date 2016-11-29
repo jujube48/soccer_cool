@@ -1,0 +1,143 @@
+body {
+  background-color: grey;
+}
+
+#terrain {
+  background-color: darkgreen;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 500px;
+}
+#titre {
+  text-align: center;
+  color: red;
+}
+#middle-line {
+  background-color: white;
+  height: 500px;
+  width: 10px;
+  position: absolute;
+  left: calc(50% - 5px);
+  top: 0;
+}
+#goal1 {
+  height: 100px;
+  width: 75px;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 50px)
+}
+#goal2 {
+  height: 100px;
+  width: 75px;
+  background-color: gray;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 50px);
+}
+#goal-line1 {
+  height: 100px;
+  width: 75px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: darkgreen;
+  left: 75px;
+  top: calc(50% - 50px);
+  position: absolute;
+  border: 5px solid white;
+}
+#goal-line2 {
+  height: 100px;
+  width: 75px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-color: darkgreen;
+  right: 75px;
+  top: calc(50% - 50px);
+  position: absolute;
+  border: 5px solid white;
+}
+
+#terrainfond{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  background-color: darkblue;
+  border-radius: 15px;
+  width: 780px;
+  height: 530px;
+}
+
+#titrefond {
+  width: 160px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkblue;
+  border-radius: 15px;
+  margin-top: -50px;
+}
+
+.titre{
+  color: white;
+  text-align: center;
+  font-family: Chewy;
+}
+
+.ballon{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+
+copyright{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+#ballon{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  background-color: black;
+  border-radius: 100%;
+
+}
+
+#score{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+#button{
+
+}
+
+#player2{
+  background-color: blue;
+  right: 85px;
+
+}
+
+#player1 {
+  background-color: red;
+  left: 85px;
+
+}
+
+.player {
+  transition: all 0.2s ease;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top: 225px;
+}
