@@ -100,30 +100,41 @@ function move() {
 
 function movePlayer1Up() {
   //setTimeout():
-  player1.y1 = player1.y1 - 19;
-  player1.y2 = player1.y2 - 19;
-  player1Element.setAttribute("style", "top:" + player1.y1 + "px;")
+  if (player1.y1 > -3){
+    player1.y1 = player1.y1 - 19;
+    player1.y2 = player1.y2 - 19;
+    player1Element.setAttribute("style", "top:" + player1.y1 + "px;")
+  }
+  console.log(player1.y1);
+
 }
 
 function movePlayer1Down() {
-  //setTimeout():
-  player1.y1 = player1.y1 + 19;
-  player1.y2 = player1.y2 + 19;
-  player1Element.setAttribute("style", "top:" + player1.y1 + "px;")
+//setTimeout():
+  if (player1.y2 <= 500){
+    player1.y1 = player1.y1 + 19;
+    player1.y2 = player1.y2 + 19;
+    player1Element.setAttribute("style", "top:" + player1.y1 + "px;")
+  }
+  console.log(player1.y2);
 }
 
 function movePlayer2Up() {
   //setTimeout():
-  player2.y1 = player2.y1 - 19;
-  player2.y2 = player2.y2 - 19;
-  player2Element.setAttribute("style", "top:" + player2.y1 + "px;")
+  if (player2.y1 >= 0) {
+    player2.y1 = player2.y1 - 19;
+    player2.y2 = player2.y2 - 19;
+    player2Element.setAttribute("style", "top:" + player2.y1 + "px;")
+  }
 }
 
 function movePlayer2Down() {
   //setTimeout():
-  player2.y1 = player2.y1 + 19;
-  player2.y2 = player2.y2 + 19;
-  player2Element.setAttribute("style", "top:" + player2.y1 + "px;")
+  if (player2.y2 <= 500){
+    player2.y1 = player2.y1 + 19;
+    player2.y2 = player2.y2 + 19;
+    player2Element.setAttribute("style", "top:" + player2.y1 + "px;")
+  }
 }
 
 
