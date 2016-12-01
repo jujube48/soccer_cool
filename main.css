@@ -110,10 +110,6 @@ copyright{
   font-size: 24px;
 }
 
-#button{
-
-}
-
 #player2{
   background-color: blue;
   right: 85px;
@@ -132,4 +128,12 @@ copyright{
   height: 50px;
   position: absolute;
   top: 225px;
+}
+
+#blue-instructions {
+  color: blue;
+}
+
+#red-instructions {
+  color: red;
 }
